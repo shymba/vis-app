@@ -276,6 +276,43 @@ body {
   }
 }
 
+.blue-section {
+  height: 280px;
+  margin-left: 325px;
+  margin-bottom: 160px;
+  background-color: #0093E6;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  align-items: center;
+
+  .blue {
+    display: flex;
+    align-items: center;
+
+    .blue-circle {
+      width: 100px;
+      height: 100px;
+      margin-left: 130px;
+      border-radius: 50%;
+      background-color: #7CC6EF;
+    }
+
+    .blue-content {
+      font-size: 32px;
+      line-height: 1;
+      color: #FFFFFF;
+      margin-left: 30px;
+    }
+
+    .two, .three {
+      margin-left: 155px;
+    }
+  }
+
+
+}
+
 .section-form {
   max-width: 1200px;
   margin: 0 auto;

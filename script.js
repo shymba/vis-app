@@ -41,8 +41,8 @@ const App = {
             if(!this.email) {
                 this.errors.push('Email field is required!')
             }
-            this.name = '',
             this.phoneNumber = '',
+            this.name = '',
             this.email = ''
         },
     }
