@@ -140,7 +140,25 @@
             <h1>Lorem Ipsum <br>is simply dummy text</h1>
 
             <div class="section-form-container">
-                <div id="form">content Vue</div>
+                <div class="form-container">
+                    <h2 class="form-title">It is a long established <br>fact that a reader</h2>
+                    <form class="form" id="form">
+                        <label for="name"></label>
+                        <input class="name" id="name" type="text" placeholder="Name" v-model="name"/>
+                       <div class="form-items">
+                           <label for="phone"></label>
+                           <input class="tel" type="tel" id="phone" placeholder="Phone" v-model="phoneNumber"/>
+                           <label for="email"></label>
+                           <input class="email" type="email" id="email" placeholder="E-mail" v-model="email"/>
+
+                           <p class="notice" v-if="errors.length">
+                               <span v-for="err in errors" :key="err"><b class="star"> * </b> {{err}} </span>
+                           </p>
+                       </div>
+                        <button class="btn" @click="dataFormUser">Lorem Ipsum</button>
+                    </form>
+                </div>
+
                 <div class="reader">
                     <h2>It is a long established <br> fact that a reader</h2>
                     <p class="email"><a href="mailto:support@email.com">support@email.com</a></p>
@@ -187,5 +205,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
