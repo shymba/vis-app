@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <link rel="stylesheet/less" href="style.scss" type="text/css">
 </head>
 <body>
@@ -74,7 +75,73 @@
         </section>
 
         <section class="third-section carousel">
-            <h2>Lorem (carousel)</h2>
+
+            <div class="third-section-title">
+                <h2>Lorem</h2>
+            </div>
+
+                <div class="slider-container">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card">
+                                <div class="card-content-top">
+                                    <div class="card-circle"></div>
+                                    <div class="card-title">Lorem <br>Ipsum</div>
+                                </div>
+                                <ul class="card-ul">
+                                    <li class="card-li">
+                                        <span>It is a long established fact that a reader will be distracted</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>The readable content</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>There are many variations of passages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content-top">
+                                    <div class="card-circle"></div>
+                                    <div class="card-title">Lorem <br>Ipsum</div>
+                                </div>
+                                <ul class="card-ul">
+                                    <li class="card-li">
+                                        <span>It is a long established fact that a reader will be distracted</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>The readable content</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>There are many variations of passages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide card">
+                                <div class="card-content-top">
+                                    <div class="card-circle"></div>
+                                    <div class="card-title">Lorem <br>Ipsum</div>
+                                </div>
+                                <ul class="card-ul">
+                                    <li class="card-li">
+                                        <span>It is a long established fact that a reader will be distracted</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>The readable content</span>
+                                    </li>
+                                    <li class="card-li">
+                                        <span>There are many variations of passages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
         </section>
 
         <section class="fourth-section">
@@ -137,7 +204,9 @@
         </section>
 
         <section class="section-random-items">
-            <div class="random-items" id="random-items"></div>
+            <div class="random-items" id="random-items">
+<!--                <BlueSection />-->
+            </div>
         </section>
 
         <div class="blue-section">
@@ -229,7 +298,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="components/blue-section.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="swiper/slider.js"></script>
+<!--    <script type="module" src="components/blue-section.js"></script>-->
     <script src="script.js"></script>
 </body>
 </html>
