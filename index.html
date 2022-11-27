@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="range-slider/nouislider.min.css">
     <link rel="stylesheet/less" href="style.scss" type="text/css">
 </head>
 <body>
@@ -205,6 +206,18 @@
 
         <section class="section-random-items">
             <div class="random-items" id="random-items">
+                <div class="section-random-container">
+                    <div class="section-random-circle"></div>
+                    <h2>Lorem Ipsum is simply dummy text</h2>
+                    <div class="section-random-text">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <ul class="section-random-ul">
+                            <li><span>Lorem Ipsum has been the industry's</span></li>
+                            <li><span>Standard dummy text ever since</span></li>
+                            <li><span>But also the leap into electronic typesetting</span></li>
+                        </ul>
+                    </div>
+                </div>
 <!--                <BlueSection />-->
             </div>
         </section>
@@ -247,7 +260,16 @@
                                <span v-for="err in errors" :key="err"><b class="star"> * </b> {{err}} </span>
                            </p>
                        </div>
-                        <button class="btn" @click="dataFormUser">Lorem Ipsum</button>
+
+                        <div class="filter-slider" id="range-slider"></div>
+
+                        <div class="radio-btn-section">
+                            <div class="input-section">
+                                <input type="radio" checked>
+                                <label>Lorem Ipsum is simply dummy text</label>
+                            </div>
+                            <button class="btn" @click="dataFormUser">Lorem Ipsum</button>
+                        </div>
                     </form>
                 </div>
 
@@ -300,6 +322,9 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="swiper/swiper-bundle.min.js"></script>
     <script src="swiper/slider.js"></script>
+    <script src="range-slider/nouislider.min.js"></script>
+    <script src="range-slider/range-slider.js"></script>
+    <script src="components/random-item.js"></script>
 <!--    <script type="module" src="components/blue-section.js"></script>-->
     <script src="script.js"></script>
 </body>
